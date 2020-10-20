@@ -31,14 +31,28 @@ a:active{
 }
 
 a:visited{
-  color:black;
+;
 }
 
 .container {
   width: 80%;
   margin: auto;
 }
+.button{
+  background-color:#333;
+  color:#fff;
+  padding:10px 15px;
+  border:non;
+}
 
+.button:hover{
+  background:red;
+  color:white;
+}
+
+.clr{
+  clear:both;
+}
 .box-1 {
   background-color: #333333;
   color: white;
@@ -92,12 +106,102 @@ a:visited{
 
 .Categories ul{
   padding:0;
+  padding-left:20px;
   list-style:square;
   list-style:none;
+  list-style-position: inside;
 }
 
 .Categories li{
   padding-bottom:6px;
   border-bottom:dotted 1px #333333;
   list-style-image: url('../images/check.png');
+  
+}
+
+.my-form{
+  padding:20px;
+}
+
+.my-form .form-group{
+  padding-bottom:15px;
+}
+.my-form label{
+  display:block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+  padding:8px;
+  width:100%;
+}
+
+.block{
+  float:left;
+  width:33.3%;
+  border:1px solid #ccc;
+  padding:10 px;
+  box-sizing:border-box /*this makes that border and padding applies to the 33.3% spacing*/
+}
+
+#main-block{
+  float:left;
+  width:70%;
+  padding:15px;
+  box-sizing: border-box;
+}
+
+#sidebar{
+  float:right;
+  width:30%;
+  background-color:#333;
+  color:#fff;
+  padding:15px;
+  box-sizing: border-box;
+}
+
+.p-box{
+  widows: 800px;
+  height: 500px;
+  border:1px solid black;
+  margin-top:30px;
+  position:relative;
+  background-image: url('../images/bpimage.jpg');
+  background-position: 100px 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.p-box h1{
+  position:absolute;
+  top:100px;
+  left:200px;
+}
+
+.p-box h2{
+  position: absolute;
+  bottom: 40px;
+  right: 100px;
+
+}
+
+.fix-me{
+  position:fixed;
+  top: 400px;
+
+}
+
+.my-list li:first-child{
+  background-color:red;
+}
+
+.my-list li:last-child{
+  background-color: blue;
+}
+
+.my-list li:nth-child(5){
+  background:yellow;
+}
+
+.my-list li:nth-child(even){
+  background:orange;
 }
